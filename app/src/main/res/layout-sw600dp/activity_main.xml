@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              tools:context=".MainActivity" android:orientation="vertical" >
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <EditText android:layout_width="320dp"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/taskEditText"
+                  android:hint="タスクを入力してください"
+                  android:layout_alignBottom="@+id/button2"
+                  android:layout_alignTop="@+id/button2"
+                />
+        <Spinner
+                android:id="@+id/placeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                android:hint = "場所名を選択してください"
+        </Spinner>
+    </LinearLayout>
+    <Button android:layout_width="395dp"
+            android:layout_height="wrap_content"
+            android:text="追加"
+            android:id="@+id/addButton"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_horizontal"/>
+    <ListView android:layout_width="wrap_content"
+              android:layout_height="305dp"
+              android:id="@+id/taskListView"
+              android:layout_weight="1.46"/>
+</LinearLayout>
